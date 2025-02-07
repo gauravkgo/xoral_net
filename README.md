@@ -2,7 +2,20 @@
 Neural net with inhibitory "XOR neurons"
 
 
-About:
+
+
+
+### Setup:
+
+1. Download
+2. Create virtual environment: "python3 -m venv .venv"
+3. Activate virtual environment: "source .venv/bin/activate"
+4. Install requirements: "pip install -r requirements.txt"
+5. Remain in virtual environment for use, or deactivate virtual environment: "deactivate"
+
+
+
+### About:
 
 This is a python implementation of a neural net with XOR functionality. On top of modeling a traditional neural net with layers and weights and biases, this implementation includes functionality to add layers of “XOR neurons”. The purpose of this project is to demonstrate the XOR functionality and its potential savings in artificial neural net depth and computation.
 
@@ -16,15 +29,5 @@ Apart from XOR functionality, this project implements an artificial neural net a
 The “main.py” file explores xoral net application on a small and simple two-dimensional XOR dataset, demonstrating that while a three layer (one input, one hidden, one output layer) traditional net can solve the XOR problem, only two layers (one input, one output layer) of xoral net are needed to classify the dataset. Additionally, using the same stochastic gradient descent training process on both types of neural nets, the xoral net arrives at the same accuracy as the traditional net in less training iterations and less time. However, as a result of the constant learning rate and minimal net implementation for both nets (traditional net has layer lengths 2-2-1 and xoral net has lengths 2-1), both nets are often get stuck in highly non-optimal local minima.
 
 In conclusion, this project’s implementation of a neural net with XOR-solving neurons demonstrates depth and computation time efficiency on a small XOR dataset. Future plans include implementing more XOR activation functions, demonstrations on bigger datasets, testing more complex net architectures, and testing smarter variations in learning rate and training.
-
-
-
-Setup:
-
-1. Download
-2. Create virtual environment: "python3 -m venv .venv"
-3. Activate virtual environment: "source .venv/bin/activate"
-4. Install requirements: "pip install -r requirements.txt"
-5. Remain in virtual environment for use, or deactivate virtual environment: "deactivate"
 
 
